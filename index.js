@@ -4,6 +4,8 @@ const fetchBoredApi = () => {
     .then(response => response.json())
     .then(data => {
       document.getElementById("random-activity").textContent = data.activity
+      document.getElementById("title").textContent = "Happy Bot"
+      document.body.classList.add("fun")
     })
 }
 
